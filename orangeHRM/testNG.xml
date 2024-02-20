@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First Suite" verbose="1" thread-count="5">
+	
+	<test name="ChromeBrowser" parallel="true">
+	<parameter name="browser" value="chrome" />
+		<packages>
+			<package name="orangeHRM.*"></package>
+		</packages>
+	</test>
+	
+	<test name="EdgeBrowser" parallel="true">
+	<parameter name="browser" value="edge" />
+		<packages>
+			<package name="orangeHRM.*"></package>
+		</packages>
+	</test>
+	
+	
+	<test name="ChromeBrowser2" parallel="true">
+	<parameter name="browser" value="chrome" />
+		<packages>
+			<package name="OrangeCrossBrowser.*"></package>
+		</packages>
+	</test>
+	
+	<test name="EdgeBrowser3" parallel="true">
+	<parameter name="browser" value="edge" />
+		<packages>
+			<package name="OrangeCrossBrowser.*"></package>
+		</packages>
+	</test>
+	
+	
+</suite>
+
